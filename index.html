@@ -56,9 +56,9 @@
       </header>
 
       <main class="content">
-        <section class="events">
+        <section id="events" class="events">
           <div class="events__content">
-            <h2 id="events" class="events__heading">Upcoming events:</h2>
+            <h2 class="events__heading">Upcoming events:</h2>
             <h3 class="events__title">
               In honor of Joan Feynman: Women in astrophysics
             </h3>
@@ -137,12 +137,13 @@
         </section>
 
         <section
+          id="staff-picks"
           class="staff"
           style="background-image: url('./images/staff_picks_background.jpg')"
         >
-          <h2 id="staff-picks" class="staff__title">Staff picks</h2>
+          <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <ul class="staff__content">
+          <ul class="staff__cards">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -213,10 +214,8 @@
           </ul>
         </section>
 
-        <section class="membership">
-          <h2 id="member" class="membership__title">
-            Becoming a library member is easy!
-          </h2>
+        <section id="member" class="membership">
+          <h2 class="membership__title">Becoming a library member is easy!</h2>
           <ul class="membership__steps">
             <li class="step">
               <h3 class="step__title">
@@ -271,8 +270,8 @@
           </ul>
         </section>
 
-        <section class="about">
-          <h2 id="about" class="about__title">About the library</h2>
+        <section id="about" class="about">
+          <h2 class="about__title">About the library</h2>
           <div class="about__content">
             <p class="about__paragraph">
               Libraries are essential establishments in practically every city,
@@ -297,21 +296,21 @@
       </main>
       <footer id="contacts" class="footer">
         <div class="footer__columns">
-          <div class="footer__column_footer__logo">
+          <div class="footer__column footer__logo">
             <img
               src="./images/logo_white.png"
               alt="Company logo"
               class="footer__logo"
             />
           </div>
-          <div class="footer__column_content_hours">
+          <div class="footer__column content_hours">
             <h5 class="footer__column-heading">Hours</h5>
             <ul class="footer__list">
               <li class="footer__list-item">Weekdays: 9am-8pm</li>
               <li class="footer__list-item">Weekends: 10am-6pm</li>
             </ul>
           </div>
-          <div class="footer__column_content_social">
+          <div class="footer__column content_social">
             <h5 class="footer__column-heading">Social media</h5>
             <ul class="footer__list">
               <li class="footer__list-item">
