@@ -31,14 +31,13 @@
 .nav__links {
   display: flex;
   column-gap: 20px;
-  font-size: 8px;
   list-style-type: none;
   margin: 8px 0 0;
   padding: 0;
 }
 
 .nav__link {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -52,15 +51,14 @@
   line-height: 76px;
   font-weight: 500;
   max-width: 544px;
-  margin-top: 150px;
+  margin: 150px 0 0;
 }
 
 .header__description {
   font-size: 20px;
   line-height: 30px;
   max-width: 532px;
-  margin-top: 32px;
-  margin-bottom: 0;
+  margin: 32px 0 0;
 }
 
 .header__image {
@@ -234,6 +232,7 @@
 }
 .staff {
   padding: 100px 0 140px;
+  background-image: url(../images/staff_picks_background.jpg);
   background-size: cover;
 }
 
@@ -354,6 +353,8 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  z-index: 1;
 }
 
 .about__title {
@@ -361,11 +362,8 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
   max-width: 154px;
-  margin-top: 40px;
   margin-right: 120px;
-  position: relative;
 }
 
 .about__content {
@@ -373,11 +371,6 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
-  margin: auto;
-  position: relative;
-  z-index: 2;
-  bottom: 25px;
-  right: 50px;
 }
 
 .about__circle {
@@ -388,7 +381,7 @@
   position: absolute;
   top: -121px;
   left: -91px;
-  z-index: 0;
+  z-index: -1;
 }
 
 .about__paragraph {
@@ -415,14 +408,10 @@
 
 .footer__column_content_hours {
   margin-left: auto;
-  position: relative;
-  bottom: 20px;
 }
 
 .footer__column_content_social {
   margin-left: 100px;
-  position: relative;
-  bottom: 20px;
 }
 
 .footer__logo {
@@ -450,6 +439,7 @@
 
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .footer__column-link {
@@ -457,6 +447,9 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .footer__column-link:hover {
@@ -469,7 +462,5 @@
 }
 
 .footer__copyright {
-  position: absolute;
-  bottom: 20px;
-  margin-top: 108px;
+  margin: 108px 0 0;
 }
